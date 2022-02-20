@@ -1,10 +1,7 @@
 /*
-
 Santiago Vidal DIV E 
-I/F ej3
-
+IF ej4
 Al ingresar una edad debemos informar si la persona es adolescente, edad entre 13 y 17 años (inclusive) .
-
 */
 
 
@@ -32,12 +29,7 @@ function mostrar()
 
 /*
 operadores relacionales 
-
 //==  >=  <=  !=
-
 //operador logico
-
 // ! &&  ||
-
 */
-

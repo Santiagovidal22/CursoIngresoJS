@@ -1,8 +1,6 @@
 /*
-
 Santiago Vidal DIV E 
 I/F ej3
-
 */
 
 function mostrar()

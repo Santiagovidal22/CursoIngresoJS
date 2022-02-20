@@ -1,7 +1,6 @@
 /* 
 Santiago Vidal DIV E 
 I/F ej1
-
 Al ingresar una edad que sea igual a 15, mostrar el mensaje "niña bonita".
 */
 
@@ -26,4 +25,5 @@ function mostrar()
 
 
 }//FIN DE LA FUNCIÓN
+
 

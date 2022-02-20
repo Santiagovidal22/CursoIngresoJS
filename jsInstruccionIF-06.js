@@ -1,43 +1,67 @@
 	/*
 Santiago Vidal DIV E 
 IF ej6
-Enunciado:
-Al ingresar una edad debemos informar si la persona es mayor de edad (mas de 18 años) 
- o adolescente (entre 13 y 17 años) o niño (menor a 13 años).
+Ejercicio 6 bis(usar if else):
+Al ingresar por prompt una edad debemos informar si
+la persona es anciano(mas de 70), mayor de edad (entre 70 y 18 años),
+adolescente (entre 13 y 17 años), niño (menor a 13 años), bebe (0 a 3 años).
+mostrar por ID el resultado.
 */
 
 function mostrar()
 {
-	var edad
+	var edad;
+	var mensaje;
 
-	edad=document.getElementById("txtIdEdad").value;
 
 	edad=parseInt(edad);
+	edad=prompt("ingrese su edad");
+		
 
-	if(edad>= 18)
 
-	{
-	   alert("usted es mayor de edad")
+		if (edad > 69 )
+		{
+			mensaje= "es anciano";	
+		}
+		
+		else 
+		{
+			if (edad < 70  && edad > 17)
+			{
+				mensaje="mayor de edad";
+			}	
+			
+			else 
+			{
+				 if(edad > 12 && edad < 18)
 
-     }
+				{
+					mensaje="usted es adolescente";
+				} 
+			
+				else
+				{
+					if (edad < 13 &&  edad > 3)
+					{
+						mensaje="niño";
+					}		
+					 else  
+			  			{
+			 				mensaje= "bebe"
+						}	
+				}	
+			} 
+		}	 
+		 
+		    
+       	edad=document.getElementById("txtIdEdad").value=mensaje;
+		  
 
-	if(edad>12 && edad <18)
+		 alert(mensaje);	
 
-	{
-	   alert("usted es adolescente")
+  }
 
-     }
-
-     else
-
-     	if(edad<= 12)
-
-	{
-	   alert("usted es menor de edad")
-
-     }
-
-}//FIN DE LA FUNCIÓN
+//FIN DE LA FUNCIÓN
 
 
 /*
